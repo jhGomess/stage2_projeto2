@@ -11,6 +11,8 @@
   --primary-color: #1f1534;
   --span-color: #89c5cc;
   --paragraph: #7d7987;
+  --button-color: #69b99d;
+  --button-hover: #43a784;
 }
 
 body {
@@ -85,8 +87,25 @@ section p {
 }
 
 button {
-  text-transform: uppercase;
+  color: white;
   font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.4rem 3.2rem 1.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover);
 }
 
 footer {
