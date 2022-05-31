@@ -12,3 +12,8 @@
 body {
   font-size: 1.6rem;
 }
+
+.page {
+  width: 100rem;
+  margin: 6.5rem auto 0rem;
+}
