@@ -19,11 +19,20 @@ body {
   font-size: 1.6rem;
 
   font-family: "Open Sans", sans-serif;
+
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+
+  min-height: 100vh;
 }
 
 .page {
   width: 100rem;
-  margin: 6.5rem auto 0rem;
+  margin: 0 auto;
+  padding-top: 6.5rem;
 }
 
 nav {
@@ -50,8 +59,13 @@ a {
   color: var(--primary-color);
 }
 
+ul li a {
+  opacity: 0.5;
+}
+
 ul li a:hover {
   font-weight: bold;
+  opacity: 1;
 }
 
 main {
@@ -113,8 +127,21 @@ footer {
   line-height: 2.8rem;
 
   text-align: center;
+
+  margin-bottom: 3rem;
 }
 
 footer a {
   font-weight: bold;
+  opacity: 0.5;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+.balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
