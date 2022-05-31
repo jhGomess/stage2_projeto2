@@ -7,10 +7,16 @@
 
 :root {
   font-size: 62.5%; /* 1rem = 10px */
+
+  --primary-color: #1f1534;
+  --span-color: #89c5cc;
+  --paragraph: #7d7987;
 }
 
 body {
   font-size: 1.6rem;
+
+  font-family: "Open Sans", sans-serif;
 }
 
 .page {
@@ -33,4 +39,51 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul li a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+  color: var(--primary-color);
+
+  width: 49rem;
+}
+
+h1 span {
+  color: var(--span-color);
+  font-weight: bold;
+}
+
+section p {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--paragraph);
+}
+
+button {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+footer a {
+  font-weight: bold;
 }
